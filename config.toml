@@ -1,0 +1,85 @@
+publishDir = "docs"
+theme = 'mainroad'
+title = '抓鱼抓鲜果'
+
+[Author]
+  name = "Witt"
+  bio = "生活就像吃巧克力（硬要买混装^_^，其实是买彩票)，你永远都不知道下一个是什么味道！"
+  avatar = "img/avatar.png"
+
+[menu]
+[[menu.main]]
+  name = '首页'
+  pageRef = '/'
+  weight = 10
+[[menu.main]]
+  name = 'Go'
+  url = 'http://github.com/wittwitt/go.dev'
+  weight = 20
+[[menu.main]]
+  name = 'Rust'
+  url = 'http://github.com/wittwitt/rust.dev'
+  weight = 30
+[[menu.main]]
+  name = '工具'
+  pageRef = '/tools'
+  weight = 40
+[[menu.main]]
+  name = '关于'
+  pageRef = '/about'
+  weight = 50
+
+[[menu.footer]]
+  name = '火狐'
+  url = 'https://www.mozilla.org/zh-CN/firefox/'
+  weight = 10
+[[menu.footer]]
+  name = '必应'
+  url = 'https://www.bing.com/new'
+  weight = 20
+
+[Params]
+  description = "this is Witt's blog"
+  copyright = "i5d@live.com"
+  opengraph = true
+  schema = true 
+  readmore = false
+  authorbox = true 
+  toc = true
+  pager = true
+  post_meta = ["author", "date", "categories", "translations"]
+  mainSections = ["post", "blog", "news","uuaia"]
+  dateformat = "2006-01-02" 
+  mathjax = true 
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" 
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  googleFontsLink = false
+  customCSS = ["css/custom.css"] # Include custom CSS files
+  customJS = ["js/custom.js"] # Include custom JS files
+
+[Params.logo]
+  subtitle = "这里是187j3x1星球，听到请回答！听到请回答！！！"
+
+[Params.style.vars]
+  fontFamilyPrimary = "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
+  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+
+[Params.sidebar]
+  home = "right"
+  list = "right"
+  single = "right"
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+
+[Params.widgets.search]
+  url = "https://www.bing.com/search"
+  [Params.widgets.search.input]
+    name = "q1"
+    pre = "site:"
+
+[Params.widgets.social]
+    github = "wittwitt"
+
+[[Params.widgets.social.custom]]
+    title = "chatGPT"
+    url = "https://chat.openai.com/"
+    icon = "chatgpt.svg"
